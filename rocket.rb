@@ -3,8 +3,10 @@ require_relative 'player'
 # Game of Rockets
 
 class Rocket < Gosu::Window
+  WIDTH = 1024
+  HEIGHT = 768
   def initialize 
-    super(1024, 768)
+    super(WIDTH, HEIGHT)
     self.caption = 'Rocket Ship'
     @player = Player.new(self)
   end
