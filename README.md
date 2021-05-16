@@ -1,2 +1,2 @@
 # rocket
- Gosu game of rocket-ship
+Starting a basic game in Gosu
