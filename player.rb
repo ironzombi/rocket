@@ -49,6 +49,10 @@ class Player
             @velocity_y = 0
             @y = @window.height - @radius
         end
+        if @y < @radius
+            @velocity_y = 0
+            @y = @radius
+        end
     end
 
 end
