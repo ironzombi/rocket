@@ -19,8 +19,9 @@ class Rocket < Gosu::Window
     @player.turn_left if button_down?(Gosu::KbLeft)
     @player.turn_right if button_down?(Gosu::KbRight)
     @player.accelerate if button_down?(Gosu::KbUp)
-    @player.move
+    #@player.boost if button_down?(Gosu::KbSpace)
     @player.gravity
+    @player.move
   end
 end
 

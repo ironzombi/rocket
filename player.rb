@@ -33,8 +33,8 @@ class Player
     end
 
     def gravity
-        @y -= 0.98
-        @velocity_y -= 0.098
+        @y += 0.98
+        @velocity_y += Gosu.offset_y(@angle, 0.98) * 0.1
     end
 
     def move
@@ -58,6 +58,11 @@ class Player
             @velocity_y = 0
             @y = @radius
         end
+    end
+
+    def boost
+        @velocity_y += Gosu::offset_y(@angle, 1)
+        @y += 1
     end
 
 end
